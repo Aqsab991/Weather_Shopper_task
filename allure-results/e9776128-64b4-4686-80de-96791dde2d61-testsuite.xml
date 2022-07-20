@@ -1,0 +1,163 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1658215803923' stop='1658215805505'>
+    <name>Product Selection: User will Shop for moisturizers if the weather is below 19 degrees while Shops for suncreens if the weather is above 34 degrees.</name>
+    <title>Product Selection: User will Shop for moisturizers if the weather is below 19 degrees while Shops for suncreens if the weather is above 34 degrees.</title>
+    <test-cases>
+        <test-case start='1658215803924' status='passed' stop='1658215803925'>
+            <name></name>
+            <title></title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-103.0.5060.114'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1658215803925' status='broken' stop='1658215805502'>
+            <name>Given A web browser is at the home page</name>
+            <title>Given A web browser is at the home page</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-103.0.5060.114'/>
+            </parameters>
+            <steps>
+                <step start='1658215803927' status='passed' stop='1658215805444'>
+                    <name>POST /session/:sessionId/url</name>
+                    <title>POST /session/:sessionId/url</title>
+                    <attachments>
+                        <attachment title='Request' source='aa9be072-bf81-4106-b8ac-e4369bcff852-attachment.json' type='application/json' size='57'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1658215805445' status='passed' stop='1658215805458'>
+                    <name>POST /session/:sessionId/element</name>
+                    <title>POST /session/:sessionId/element</title>
+                    <attachments>
+                        <attachment title='Request' source='732042ef-c380-4939-88e6-b621035f889a-attachment.json' type='application/json' size='56'/>
+                        <attachment title='Response' source='28a419bb-ad23-470c-bad2-319bb3fbe395-attachment.json' type='application/json' size='83'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1658215805464' status='passed' stop='1658215805477'>
+                    <name>POST /session/:sessionId/execute/sync</name>
+                    <title>POST /session/:sessionId/execute/sync</title>
+                    <attachments>
+                        <attachment title='Request' source='0f9444eb-6cc9-4c6e-b366-08f4f7df85e9-attachment.json' type='application/json' size='8337'/>
+                        <attachment title='Response' source='498be4d4-05df-4597-ac73-b54a3841e8b3-attachment.json' type='application/json' size='4'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1658215805477' status='passed' stop='1658215805491'>
+                    <name>POST /session/:sessionId/element</name>
+                    <title>POST /session/:sessionId/element</title>
+                    <attachments>
+                        <attachment title='Request' source='b4e12911-375b-4277-8f8c-8a4bac290932-attachment.json' type='application/json' size='81'/>
+                        <attachment title='Response' source='1ab69834-ceab-4d0e-a206-d11d60495236-attachment.json' type='application/json' size='83'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1658215805498' status='broken' stop='1658215805501'>
+                    <name>GET /session/:sessionId/element/4e2221de-2a8f-4683-b896-c75f78a298b3/text</name>
+                    <title>GET /session/:sessionId/element/4e2221de-2a8f-4683-b896-c75f78a298b3/text</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>ReferenceError: moisturizer is not defined</message>
+                <stack-trace>ReferenceError: moisturizer is not defined
+                    at World.&lt;anonymous> (D:\Task\Weather_Shopper_task\Step-Defs\Home_page_step-defs\/steps.js:21:29)
+                    at processTicksAndRejections (node:internal/process/task_queues:96:5)</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1658215805502' status='broken' stop='1658215805502'>
+            <name>And the value of temperature is less than 19 degrees</name>
+            <title>And the value of temperature is less than 19 degrees</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-103.0.5060.114'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>Step "the value of temperature is less than 19 degrees" is not defined. You can ignore this error by setting cucumberOpts.ignoreUndefinedDefinitions as true.</message>
+                <stack-trace>Step "the value of temperature is less than 19 degrees" is not defined. You can ignore this error by setting cucumberOpts.ignoreUndefinedDefinitions as true.
+                	at Feature(D:\Task\Weather_Shopper_task\features\HomePage\Home_page.feature):1:1
+                	at Scenario(User will Shop for moisturizers if the weather is below 19 degrees while Shops for suncreens if the weather is above 34 degrees.):5:3
+                	at Step(the value of temperature is &lt;temperatureOptions>):8:5
+                </stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1658215805502' status='broken' stop='1658215805503'>
+            <name>When the user clicks on Buy moisturizers</name>
+            <title>When the user clicks on Buy moisturizers</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-103.0.5060.114'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>Step "the user clicks on Buy moisturizers" is not defined. You can ignore this error by setting cucumberOpts.ignoreUndefinedDefinitions as true.</message>
+                <stack-trace>Step "the user clicks on Buy moisturizers" is not defined. You can ignore this error by setting cucumberOpts.ignoreUndefinedDefinitions as true.
+                	at Feature(D:\Task\Weather_Shopper_task\features\HomePage\Home_page.feature):1:1
+                	at Scenario(User will Shop for moisturizers if the weather is below 19 degrees while Shops for suncreens if the weather is above 34 degrees.):5:3
+                	at Step(the user clicks on &lt;buyButton>):10:5
+                </stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1658215805503' status='broken' stop='1658215805503'>
+            <name>Then the title of the page should be Moisturizers</name>
+            <title>Then the title of the page should be Moisturizers</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-103.0.5060.114'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>Step "the title of the page should be Moisturizers" is not defined. You can ignore this error by setting cucumberOpts.ignoreUndefinedDefinitions as true.</message>
+                <stack-trace>Step "the title of the page should be Moisturizers" is not defined. You can ignore this error by setting cucumberOpts.ignoreUndefinedDefinitions as true.
+                	at Feature(D:\Task\Weather_Shopper_task\features\HomePage\Home_page.feature):1:1
+                	at Scenario(User will Shop for moisturizers if the weather is below 19 degrees while Shops for suncreens if the weather is above 34 degrees.):5:3
+                	at Step(the title of the page should be &lt;product>):11:5
+                </stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1658215805504' status='passed' stop='1658215805505'>
+            <name></name>
+            <title></title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-103.0.5060.114'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

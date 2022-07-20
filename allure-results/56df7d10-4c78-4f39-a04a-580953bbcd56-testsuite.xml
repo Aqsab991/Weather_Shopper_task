@@ -1,0 +1,176 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1658301990986' stop='1658301993518'>
+    <name>Adding moisturisers to the cart: Add two moisturizers to the cart that meet specific criteria</name>
+    <title>Adding moisturisers to the cart: Add two moisturizers to the cart that meet specific criteria</title>
+    <test-cases>
+        <test-case start='1658301990987' status='passed' stop='1658301990988'>
+            <name></name>
+            <title></title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-103.0.5060.114'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1658301990988' status='passed' stop='1658301993457'>
+            <name>Given the browser is at the "Moisturizers" page</name>
+            <title>Given the browser is at the "Moisturizers" page</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-103.0.5060.114'/>
+            </parameters>
+            <steps>
+                <step start='1658301990990' status='passed' stop='1658301993456'>
+                    <name>POST /session/:sessionId/url</name>
+                    <title>POST /session/:sessionId/url</title>
+                    <attachments>
+                        <attachment title='Request' source='8d373161-4635-4366-af01-b08ce217b3da-attachment.json' type='application/json' size='68'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+        <test-case start='1658301993457' status='passed' stop='1658301993515'>
+            <name>When the moisturizer is least expensive and contains "Aloe" in the name</name>
+            <title>When the moisturizer is least expensive and contains "Aloe" in the name</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-103.0.5060.114'/>
+            </parameters>
+            <steps>
+                <step start='1658301993458' status='passed' stop='1658301993474'>
+                    <name>POST /session/:sessionId/elements</name>
+                    <title>POST /session/:sessionId/elements</title>
+                    <attachments>
+                        <attachment title='Request' source='2282b075-b9ee-4c00-b899-a1bbafde34e8-attachment.json' type='application/json' size='84'/>
+                        <attachment title='Response' source='b6b0f2bf-2597-4df4-86f6-f01817b2726d-attachment.json' type='application/json' size='548'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1658301993482' status='passed' stop='1658301993495'>
+                    <name>POST /session/:sessionId/elements</name>
+                    <title>POST /session/:sessionId/elements</title>
+                    <attachments>
+                        <attachment title='Request' source='cac358a3-b84c-4233-9192-c0b4bdb23d5c-attachment.json' type='application/json' size='82'/>
+                        <attachment title='Response' source='35a9a3d0-08ea-479d-912f-cef7880b79a2-attachment.json' type='application/json' size='1094'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1658301993507' status='undefined'>
+                    <name>GET /session/:sessionId/element/1178fd76-0601-4608-b573-758a4412a8fd/text</name>
+                    <title>GET /session/:sessionId/element/1178fd76-0601-4608-b573-758a4412a8fd/text</title>
+                    <attachments/>
+                    <steps>
+                        <step start='1658301993508' status='undefined'>
+                            <name>GET /session/:sessionId/element/83ba53fe-b38f-4b27-86d3-6e4dc453322d/text</name>
+                            <title>GET /session/:sessionId/element/83ba53fe-b38f-4b27-86d3-6e4dc453322d/text</title>
+                            <attachments/>
+                            <steps>
+                                <step start='1658301993509' status='undefined'>
+                                    <name>GET /session/:sessionId/element/c79e892a-2526-44d6-bf96-cfc78119dbfa/text</name>
+                                    <title>GET /session/:sessionId/element/c79e892a-2526-44d6-bf96-cfc78119dbfa/text</title>
+                                    <attachments/>
+                                    <steps>
+                                        <step start='1658301993510' status='undefined'>
+                                            <name>GET /session/:sessionId/element/81e3f19a-0820-4735-be3e-49b18fcd66ae/text</name>
+                                            <title>GET /session/:sessionId/element/81e3f19a-0820-4735-be3e-49b18fcd66ae/text</title>
+                                            <attachments/>
+                                            <steps>
+                                                <step start='1658301993512' status='undefined'>
+                                                    <name>GET /session/:sessionId/element/0273d75f-0604-4d82-9124-db8de255673a/text</name>
+                                                    <title>GET /session/:sessionId/element/0273d75f-0604-4d82-9124-db8de255673a/text</title>
+                                                    <attachments/>
+                                                    <steps>
+                                                        <step start='1658301993513' status='undefined'>
+                                                            <name>GET /session/:sessionId/element/b71bd553-ebe1-461f-a8f6-8131948b5598/text</name>
+                                                            <title>GET /session/:sessionId/element/b71bd553-ebe1-461f-a8f6-8131948b5598/text</title>
+                                                            <attachments/>
+                                                            <steps/>
+                                                        </step>
+                                                    </steps>
+                                                </step>
+                                            </steps>
+                                        </step>
+                                    </steps>
+                                </step>
+                            </steps>
+                        </step>
+                    </steps>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+        <test-case start='1658301993516' status='broken' stop='1658301993516'>
+            <name>And the user clicks on "Add"</name>
+            <title>And the user clicks on "Add"</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-103.0.5060.114'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>Step "the user clicks on "Add"" is not defined. You can ignore this error by setting cucumberOpts.ignoreUndefinedDefinitions as true.</message>
+                <stack-trace>Step "the user clicks on "Add"" is not defined. You can ignore this error by setting cucumberOpts.ignoreUndefinedDefinitions as true.
+                	at Feature(D:\Task\Weather_Shopper_task\features\Product_prchase\Purchase_moisturiser.feature):1:1
+                	at Scenario(Add two moisturizers to the cart that meet specific criteria):5:3
+                	at Step(the user clicks on "Add"):10:5
+                </stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1658301993516' status='broken' stop='1658301993516'>
+            <name>Then the value of cart should be incremented</name>
+            <title>Then the value of cart should be incremented</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-103.0.5060.114'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>Step "the value of cart should be incremented" is not defined. You can ignore this error by setting cucumberOpts.ignoreUndefinedDefinitions as true.</message>
+                <stack-trace>Step "the value of cart should be incremented" is not defined. You can ignore this error by setting cucumberOpts.ignoreUndefinedDefinitions as true.
+                	at Feature(D:\Task\Weather_Shopper_task\features\Product_prchase\Purchase_moisturiser.feature):1:1
+                	at Scenario(Add two moisturizers to the cart that meet specific criteria):5:3
+                	at Step(the value of cart should be incremented):12:5
+                </stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1658301993517' status='passed' stop='1658301993517'>
+            <name></name>
+            <title></title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-103.0.5060.114'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

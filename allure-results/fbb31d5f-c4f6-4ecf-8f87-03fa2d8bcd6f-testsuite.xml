@@ -1,0 +1,167 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1658296731046' stop='1658296733980'>
+    <name>Adding moisturisers to the cart: Add two moisturizers to the cart that meet specific criteria</name>
+    <title>Adding moisturisers to the cart: Add two moisturizers to the cart that meet specific criteria</title>
+    <test-cases>
+        <test-case start='1658296731046' status='passed' stop='1658296731047'>
+            <name></name>
+            <title></title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-103.0.5060.114'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1658296731047' status='passed' stop='1658296733937'>
+            <name>Given the browser is at the "Moisturizers" page</name>
+            <title>Given the browser is at the "Moisturizers" page</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-103.0.5060.114'/>
+            </parameters>
+            <steps>
+                <step start='1658296731050' status='passed' stop='1658296733936'>
+                    <name>POST /session/:sessionId/url</name>
+                    <title>POST /session/:sessionId/url</title>
+                    <attachments>
+                        <attachment title='Request' source='5645719e-990a-4930-8014-1a79136fcfe5-attachment.json' type='application/json' size='68'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+        <test-case start='1658296733937' status='passed' stop='1658296733977'>
+            <name>When the moisturizer is least expensive and contains "Aloe" in the name</name>
+            <title>When the moisturizer is least expensive and contains "Aloe" in the name</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-103.0.5060.114'/>
+            </parameters>
+            <steps>
+                <step start='1658296733938' status='passed' stop='1658296733956'>
+                    <name>POST /session/:sessionId/elements</name>
+                    <title>POST /session/:sessionId/elements</title>
+                    <attachments>
+                        <attachment title='Request' source='392e9902-b9c4-45a9-b944-46a3e8c74e2c-attachment.json' type='application/json' size='84'/>
+                        <attachment title='Response' source='c75187d5-e53c-4686-9562-c452d02b1083-attachment.json' type='application/json' size='548'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1658296733966' status='undefined'>
+                    <name>GET /session/:sessionId/element/1eb1f7e3-d047-4058-927e-e9c6a679277d/text</name>
+                    <title>GET /session/:sessionId/element/1eb1f7e3-d047-4058-927e-e9c6a679277d/text</title>
+                    <attachments/>
+                    <steps>
+                        <step start='1658296733968' status='undefined'>
+                            <name>GET /session/:sessionId/element/3c6e66d7-8259-4626-974d-008a55aaffab/text</name>
+                            <title>GET /session/:sessionId/element/3c6e66d7-8259-4626-974d-008a55aaffab/text</title>
+                            <attachments/>
+                            <steps>
+                                <step start='1658296733969' status='undefined'>
+                                    <name>GET /session/:sessionId/element/cf9d3de5-2c9f-4743-b3b8-51b7901a4653/text</name>
+                                    <title>GET /session/:sessionId/element/cf9d3de5-2c9f-4743-b3b8-51b7901a4653/text</title>
+                                    <attachments/>
+                                    <steps>
+                                        <step start='1658296733971' status='undefined'>
+                                            <name>GET /session/:sessionId/element/2ab5898a-89e8-4361-8ef7-b15370eeaf69/text</name>
+                                            <title>GET /session/:sessionId/element/2ab5898a-89e8-4361-8ef7-b15370eeaf69/text</title>
+                                            <attachments/>
+                                            <steps>
+                                                <step start='1658296733973' status='undefined'>
+                                                    <name>GET /session/:sessionId/element/445ecf13-5da5-4571-a7e1-906d179188c7/text</name>
+                                                    <title>GET /session/:sessionId/element/445ecf13-5da5-4571-a7e1-906d179188c7/text</title>
+                                                    <attachments/>
+                                                    <steps>
+                                                        <step start='1658296733974' status='undefined'>
+                                                            <name>GET /session/:sessionId/element/11a0e51e-c96c-4f4f-837c-ac8d70befb46/text</name>
+                                                            <title>GET /session/:sessionId/element/11a0e51e-c96c-4f4f-837c-ac8d70befb46/text</title>
+                                                            <attachments/>
+                                                            <steps/>
+                                                        </step>
+                                                    </steps>
+                                                </step>
+                                            </steps>
+                                        </step>
+                                    </steps>
+                                </step>
+                            </steps>
+                        </step>
+                    </steps>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+        <test-case start='1658296733977' status='broken' stop='1658296733978'>
+            <name>And the user clicks on "Add"</name>
+            <title>And the user clicks on "Add"</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-103.0.5060.114'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>Step "the user clicks on "Add"" is not defined. You can ignore this error by setting cucumberOpts.ignoreUndefinedDefinitions as true.</message>
+                <stack-trace>Step "the user clicks on "Add"" is not defined. You can ignore this error by setting cucumberOpts.ignoreUndefinedDefinitions as true.
+                	at Feature(D:\Task\Weather_Shopper_task\features\Product_prchase\Purchase_moisturiser.feature):1:1
+                	at Scenario(Add two moisturizers to the cart that meet specific criteria):5:3
+                	at Step(the user clicks on "Add"):10:5
+                </stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1658296733978' status='broken' stop='1658296733978'>
+            <name>Then the value of cart should be incremented</name>
+            <title>Then the value of cart should be incremented</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-103.0.5060.114'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>Step "the value of cart should be incremented" is not defined. You can ignore this error by setting cucumberOpts.ignoreUndefinedDefinitions as true.</message>
+                <stack-trace>Step "the value of cart should be incremented" is not defined. You can ignore this error by setting cucumberOpts.ignoreUndefinedDefinitions as true.
+                	at Feature(D:\Task\Weather_Shopper_task\features\Product_prchase\Purchase_moisturiser.feature):1:1
+                	at Scenario(Add two moisturizers to the cart that meet specific criteria):5:3
+                	at Step(the value of cart should be incremented):12:5
+                </stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1658296733978' status='passed' stop='1658296733979'>
+            <name></name>
+            <title></title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-103.0.5060.114'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>
