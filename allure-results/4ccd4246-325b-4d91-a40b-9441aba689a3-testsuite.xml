@@ -1,0 +1,146 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1658383760705' stop='1658383762882'>
+    <name>Adding Almond moisturisers to the cart: Add an Almond moisturizer to the cart that meet specific criteria</name>
+    <title>Adding Almond moisturisers to the cart: Add an Almond moisturizer to the cart that meet specific criteria</title>
+    <test-cases>
+        <test-case start='1658383760706' status='passed' stop='1658383760707'>
+            <name></name>
+            <title></title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-103.0.5060.114'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1658383760707' status='passed' stop='1658383762739'>
+            <name>Given the browser is at the "Moisturizers" page</name>
+            <title>Given the browser is at the "Moisturizers" page</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-103.0.5060.114'/>
+            </parameters>
+            <steps>
+                <step start='1658383760709' status='passed' stop='1658383762738'>
+                    <name>POST /session/:sessionId/url</name>
+                    <title>POST /session/:sessionId/url</title>
+                    <attachments>
+                        <attachment title='Request' source='0993db0a-c999-4bbf-b94a-f02b9e31a308-attachment.json' type='application/json' size='68'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+        <test-case start='1658383762739' status='passed' stop='1658383762826'>
+            <name>When the moisturizer contains "Almond" in the name, user adds it in the cart</name>
+            <title>When the moisturizer contains "Almond" in the name, user adds it in the cart</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-103.0.5060.114'/>
+            </parameters>
+            <steps>
+                <step start='1658383762741' status='passed' stop='1658383762756'>
+                    <name>POST /session/:sessionId/elements</name>
+                    <title>POST /session/:sessionId/elements</title>
+                    <attachments>
+                        <attachment title='Request' source='38e48547-2ece-49de-9c2b-a3db6e8cf4e6-attachment.json' type='application/json' size='118'/>
+                        <attachment title='Response' source='39b7622b-25e8-4f2a-a2ea-3b9ecb9bbdde-attachment.json' type='application/json' size='93'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1658383762760' status='passed' stop='1658383762795'>
+                    <name>POST /session/:sessionId/elements</name>
+                    <title>POST /session/:sessionId/elements</title>
+                    <attachments>
+                        <attachment title='Request' source='1b26b1ba-5503-426b-b48c-6de3bc244bf0-attachment.json' type='application/json' size='123'/>
+                        <attachment title='Response' source='7ea83b0e-2ecc-4f2a-a384-b3514bb53b25-attachment.json' type='application/json' size='93'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1658383762799' status='passed' stop='1658383762814'>
+                    <name>GET /session/:sessionId/element/3f2994ca-345f-49cd-b260-8d84141d913e/text</name>
+                    <title>GET /session/:sessionId/element/3f2994ca-345f-49cd-b260-8d84141d913e/text</title>
+                    <attachments>
+                        <attachment title='Response' source='37425d8a-c858-4087-b256-237e859c7305-attachment.json' type='application/json' size='16'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1658383762815' status='passed' stop='1658383762823'>
+                    <name>GET /session/:sessionId/element/3f2994ca-345f-49cd-b260-8d84141d913e/text</name>
+                    <title>GET /session/:sessionId/element/3f2994ca-345f-49cd-b260-8d84141d913e/text</title>
+                    <attachments>
+                        <attachment title='Response' source='ed22fd45-2ab4-444e-ba64-dd833000e8fd-attachment.json' type='application/json' size='16'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1658383762824' status='undefined'>
+                    <name>POST /session/:sessionId/element/ff0ca277-e6ea-414d-8236-ead80bb9687f/click</name>
+                    <title>POST /session/:sessionId/element/ff0ca277-e6ea-414d-8236-ead80bb9687f/click</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+        <test-case start='1658383762826' status='passed' stop='1658383762881'>
+            <name>Then the almond moisturiser is added and value of cart should be incremented</name>
+            <title>Then the almond moisturiser is added and value of cart should be incremented</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-103.0.5060.114'/>
+            </parameters>
+            <steps>
+                <step start='1658383762827' status='passed' stop='1658383762857'>
+                    <name>POST /session/:sessionId/element</name>
+                    <title>POST /session/:sessionId/element</title>
+                    <attachments>
+                        <attachment title='Request' source='14998959-24ba-4f41-a312-b4aa3a2f9138-attachment.json' type='application/json' size='49'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1658383762868' status='passed' stop='1658383762880'>
+                    <name>GET /session/:sessionId/element/cc736398-4dee-4906-af51-d361a4cc7552/text</name>
+                    <title>GET /session/:sessionId/element/cc736398-4dee-4906-af51-d361a4cc7552/text</title>
+                    <attachments>
+                        <attachment title='Response' source='f5aeaef7-6101-4e10-8155-7800b7a7d83d-attachment.json' type='application/json' size='11'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments>
+                <attachment title='Response' source='2351360b-1308-42a2-8f64-7d090dd26b67-attachment.json' type='application/json' size='83'/>
+            </attachments>
+        </test-case>
+        <test-case start='1658383762881' status='passed' stop='1658383762882'>
+            <name></name>
+            <title></title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-103.0.5060.114'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

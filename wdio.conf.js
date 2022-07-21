@@ -141,11 +141,11 @@ exports.config = {
         // <string[]> (file/dir) require files before executing features
         // require: ['./features/step-definitions/steps.js'],
         require: [
-            "./Step-Defs/**/Given.js",
-            "./Step-Defs/**/When.js",
-            "./Step-Defs/**/Then.js",
+
             "./Step-Defs/**/steps.js",
-            "./Step-Defs/**/Product_purchase_defs.js"
+            "./Step-Defs/**/Purchase_moisturiser_defs.js",
+            "./Step-Defs/**/Purchase_sunscreen.js"
+
 
         ],
         // <boolean> show full backtrace for errors

@@ -1,0 +1,128 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1658388853852' stop='1658388856226'>
+    <name>Adding suncreens to the cart: Add two Sunscreens to the cart that meet specific criteria</name>
+    <title>Adding suncreens to the cart: Add two Sunscreens to the cart that meet specific criteria</title>
+    <test-cases>
+        <test-case start='1658388853853' status='passed' stop='1658388853855'>
+            <name></name>
+            <title></title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-103.0.5060.114'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1658388853855' status='passed' stop='1658388856146'>
+            <name>Given the browser is at the "Sunscreens" page</name>
+            <title>Given the browser is at the "Sunscreens" page</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-103.0.5060.114'/>
+            </parameters>
+            <steps>
+                <step start='1658388853859' status='passed' stop='1658388856145'>
+                    <name>POST /session/:sessionId/url</name>
+                    <title>POST /session/:sessionId/url</title>
+                    <attachments>
+                        <attachment title='Request' source='cfc8c4da-faeb-4639-ab88-5c895820ec2b-attachment.json' type='application/json' size='66'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+        <test-case start='1658388856147' status='broken' stop='1658388856225'>
+            <name>When the Sunscreens are least expensive and contain either SPF-50 or SPF-30 in the name, add them into the cart</name>
+            <title>When the Sunscreens are least expensive and contain either SPF-50 or SPF-30 in the name, add them into the cart</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-103.0.5060.114'/>
+            </parameters>
+            <steps>
+                <step start='1658388856149' status='passed' stop='1658388856163'>
+                    <name>POST /session/:sessionId/elements</name>
+                    <title>POST /session/:sessionId/elements</title>
+                    <attachments>
+                        <attachment title='Request' source='471f3dab-5080-4ca7-96e2-4585601e58b8-attachment.json' type='application/json' size='118'/>
+                        <attachment title='Response' source='241863a5-09f6-4c67-b271-2857b6df58f8-attachment.json' type='application/json' size='93'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1658388856166' status='passed' stop='1658388856176'>
+                    <name>POST /session/:sessionId/elements</name>
+                    <title>POST /session/:sessionId/elements</title>
+                    <attachments>
+                        <attachment title='Request' source='552f768d-498c-4a5c-a078-1f0b191643ab-attachment.json' type='application/json' size='123'/>
+                        <attachment title='Response' source='fa6b8bc8-6f01-44ca-ad2c-d8eb0eb30838-attachment.json' type='application/json' size='93'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1658388856179' status='passed' stop='1658388856191'>
+                    <name>GET /session/:sessionId/element/547e2d97-bee3-4023-b4cc-8732c1034b72/text</name>
+                    <title>GET /session/:sessionId/element/547e2d97-bee3-4023-b4cc-8732c1034b72/text</title>
+                    <attachments>
+                        <attachment title='Response' source='bf11f4b5-c05a-4e91-9f3c-62243b045b71-attachment.json' type='application/json' size='16'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1658388856192' status='passed' stop='1658388856219'>
+                    <name>GET /session/:sessionId/element/547e2d97-bee3-4023-b4cc-8732c1034b72/text</name>
+                    <title>GET /session/:sessionId/element/547e2d97-bee3-4023-b4cc-8732c1034b72/text</title>
+                    <attachments>
+                        <attachment title='Response' source='4d18551d-8f71-44e1-86b9-c3395ec56591-attachment.json' type='application/json' size='16'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>ReferenceError: add_SPF50_tocart_btn is not defined</message>
+                <stack-trace>ReferenceError: add_SPF50_tocart_btn is not defined
+                    at _default (D:\Task\Weather_Shopper_task\Page_objects\Purchase_sunscreens\/Purchase_sunscreens_action.js:48:13)
+                    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+                    at World.&lt;anonymous> (D:\Task\Weather_Shopper_task\Step-Defs\Home_page_step-defs\/Purchase_sunscreen.js:16:5)</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1658388856225' status='pending' stop='1658388856225'>
+            <name>Then the sunscreens are added into the cart and value of cart should be incremented</name>
+            <title>Then the sunscreens are added into the cart and value of cart should be incremented</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-103.0.5060.114'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1658388856225' status='passed' stop='1658388856226'>
+            <name></name>
+            <title></title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-103.0.5060.114'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>
