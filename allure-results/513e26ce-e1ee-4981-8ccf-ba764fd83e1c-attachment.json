@@ -1,0 +1,5 @@
+{
+  "error": "no such element",
+  "message": "no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\".stripe_checkout_app\"}\n  (Session info: chrome=103.0.5060.114)",
+  "stacktrace": "Backtrace:\n\tOrdinal0 [0x00376463+2188387]\n\tOrdinal0 [0x0030E461+1762401]\n\tOrdinal0 [0x00223D78+802168]\n\tOrdinal0 [0x00251880+989312]\n\tOrdinal0 [0x00251B1B+989979]\n\tOrdinal0 [0x0027E912+1173778]\n\tOrdinal0 [0x0026C824+1099812]\n\tOrdinal0 [0x0027CC22+1166370]\n\tOrdinal0 [0x0026C5F6+1099254]\n\tOrdinal0 [0x00246BE0+945120]\n\tOrdinal0 [0x00247AD6+948950]\n\tGetHandleVerifier [0x006171F2+2712546]\n\tGetHandleVerifier [0x0060886D+2652765]\n\tGetHandleVerifier [0x0040002A+520730]\n\tGetHandleVerifier [0x003FEE06+516086]\n\tOrdinal0 [0x0031468B+1787531]\n\tOrdinal0 [0x00318E88+1805960]\n\tOrdinal0 [0x00318F75+1806197]\n\tOrdinal0 [0x00321DF1+1842673]\n\tBaseThreadInitThunk [0x768BFA29+25]\n\tRtlGetAppContainerNamedObjectPath [0x778D7A7E+286]\n\tRtlGetAppContainerNamedObjectPath [0x778D7A4E+238]\n"
+}

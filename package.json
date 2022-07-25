@@ -4,6 +4,7 @@
   "description": "Assignment",
   "main": "index.js",
   "scripts": {
+    "open-allure": "./node_modules/.bin/allure generate ./Reports/allure-results && allure open",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -17,7 +18,9 @@
   },
   "homepage": "https://github.com/Aqsab991/Weather_Shopper_task#readme",
   "dependencies": {
-    "@wdio/cli": "^7.20.7"
+    "@wdio/cli": "^7.20.7",
+    "allure-commandline": "^1.5.0",
+    "soft-assert": "^0.2.6"
   },
   "devDependencies": {
     "@babel/core": "^7.18.6",

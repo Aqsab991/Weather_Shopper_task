@@ -1,0 +1,4 @@
+{
+  "using": "xpath",
+  "value": "//p[contains(@class, 'top-space-10')][contains(.,'Aloe') or contains(.,'aloe')] /following-sibling::button[contains(@onClick,'x')]"
+}

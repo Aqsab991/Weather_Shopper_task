@@ -1,0 +1,136 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1658492478665' stop='1658492478740'>
+    <name>Checkout: User wants to perform checkout</name>
+    <title>Checkout: User wants to perform checkout</title>
+    <test-cases>
+        <test-case start='1658492478665' status='passed' stop='1658492478666'>
+            <name></name>
+            <title></title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-103.0.5060.114'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1658492478666' status='passed' stop='1658492478703'>
+            <name>Given there are items in the cart</name>
+            <title>Given there are items in the cart</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-103.0.5060.114'/>
+            </parameters>
+            <steps>
+                <step start='1658492478672' status='undefined'>
+                    <name>POST /session/:sessionId/elements</name>
+                    <title>POST /session/:sessionId/elements</title>
+                    <attachments>
+                        <attachment title='Request' source='0eb63427-2b0e-45dd-8356-b54d268e08f7-attachment.json' type='application/json' size='118'/>
+                    </attachments>
+                    <steps>
+                        <step start='1658492478677' status='undefined'>
+                            <name>POST /session/:sessionId/elements</name>
+                            <title>POST /session/:sessionId/elements</title>
+                            <attachments>
+                                <attachment title='Request' source='be6b22cc-fdd8-4d47-9657-0bcb7c479d25-attachment.json' type='application/json' size='123'/>
+                            </attachments>
+                            <steps>
+                                <step start='1658492478681' status='undefined'>
+                                    <name>POST /session/:sessionId/elements</name>
+                                    <title>POST /session/:sessionId/elements</title>
+                                    <attachments>
+                                        <attachment title='Request' source='0c736543-34d3-43ef-903d-5db29f566bbc-attachment.json' type='application/json' size='118'/>
+                                    </attachments>
+                                    <steps>
+                                        <step start='1658492478684' status='undefined'>
+                                            <name>POST /session/:sessionId/elements</name>
+                                            <title>POST /session/:sessionId/elements</title>
+                                            <attachments>
+                                                <attachment title='Request' source='509b3319-3821-4798-ab08-866b0f515abf-attachment.json' type='application/json' size='123'/>
+                                            </attachments>
+                                            <steps>
+                                                <step start='1658492478695' status='undefined'>
+                                                    <name>POST /session/:sessionId/url</name>
+                                                    <title>POST /session/:sessionId/url</title>
+                                                    <attachments>
+                                                        <attachment title='Request' source='a49bc2c5-b438-4596-8d6f-9218e644c318-attachment.json' type='application/json' size='66'/>
+                                                    </attachments>
+                                                    <steps/>
+                                                </step>
+                                            </steps>
+                                        </step>
+                                    </steps>
+                                </step>
+                            </steps>
+                        </step>
+                    </steps>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+        <test-case start='1658492478703' status='broken' stop='1658492478737'>
+            <name>When the user enter payment details and makes payment</name>
+            <title>When the user enter payment details and makes payment</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-103.0.5060.114'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>TypeError: (0 , _CheckOut_Actions.default) is not a function</message>
+                <stack-trace>TypeError: (0 , _CheckOut_Actions.default) is not a function
+                    at World.&lt;anonymous> (D:\Task\Weather_Shopper_task\test\Step-Defs\CheckOut_page_step-defs\/Checkout.js:22:11)
+                    at World.executeAsync (D:\Task\Weather_Shopper_task\node_modules\@wdio\utils\build\shim.js:333:27)
+                    at World.testFrameworkFnWrapper (D:\Task\Weather_Shopper_task\node_modules\@wdio\utils\build\test-framework\testFnWrapper.js:51:32)
+                    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+                    at wrapPromiseWithTimeout (D:\Task\Weather_Shopper_task\node_modules\@cucumber\cucumber\src\time.ts:56:10)
+                    at Object.run (D:\Task\Weather_Shopper_task\node_modules\@cucumber\cucumber\src\user_code_runner.ts:86:16)
+                    at Object.run (D:\Task\Weather_Shopper_task\node_modules\@cucumber\cucumber\src\runtime\step_runner.ts:50:20)
+                    at TestCaseRunner.invokeStep (D:\Task\Weather_Shopper_task\node_modules\@cucumber\cucumber\src\runtime\test_case_runner.ts:130:12)
+                    at TestCaseRunner.runStep (D:\Task\Weather_Shopper_task\node_modules\@cucumber\cucumber\src\runtime\test_case_runner.ts:312:20)
+                    at D:\Task\Weather_Shopper_task\node_modules\@cucumber\cucumber\src\runtime\test_case_runner.ts:214:36</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1658492478737' status='pending' stop='1658492478738'>
+            <name>Then the payment success screen will be given to user</name>
+            <title>Then the payment success screen will be given to user</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-103.0.5060.114'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1658492478739' status='passed' stop='1658492478740'>
+            <name></name>
+            <title></title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-103.0.5060.114'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>
