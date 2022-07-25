@@ -2,17 +2,16 @@ class CheckOut_locators {
     get url() {
         return browser.url("https://weathershopper.pythonanywhere.com/sunscreen");
     };
-    get PList_of_SPF50() {
-        return $$("//p[contains(@class, 'top-space-10')][contains(.,'SPF-50')] /following-sibling::p");
+    get paymentbtnSpan() {
+        return $(".stripe-button-el>span");
     };
-    get PList_of_SPF30() {
-        return $$("//p[contains(@class, 'top-space-10')][contains(.,'SPF-30')] /following-sibling::p");
+    get paymentbyCardbtn() {
+        return $("//button[@class='stripe-button-el']");
     };
-    get btn_spf50() {
-        return $$("//p[contains(@class, 'top-space-10')][contains(.,'SPF-50')] /following-sibling::button");
-    };
-    get btn_spf30() {
-        return $$("//p[contains(@class, 'top-space-10')][contains(.,'SPF-30')] /following-sibling::button");
+    get Iframe() {
+
+
+        return $(".stripe_checkout_app");
     };
     get CartText() {
         return $("#cart");
@@ -21,7 +20,24 @@ class CheckOut_locators {
         return $(".nav-link");
     };
 
+    async switchingToiframe() {
+        await this.paymentbtnSpan.waitForDisplayed({ timeout: 50000 });
+        let pay_by_card_btn = await this.paymentbyCardbtn;
+        await pay_by_card_btn.click();
+        //browser.pause(3000);
+        //  $('.stripe_checkout_app').isDisplayed();
+        // const iframe = $(".stripe_checkout_app");
+        /* const variable named as iframe is created and
+                                        iframe id is assigned to iframe
+                                     */
+        //   iframe.scrollIntoView();
 
+        await this.Iframe.waitForDisplayed({ timeout: 30000 });
+        let isDisplayed = await this.Iframe.isDisplayed();
+        console.log("butonnnnnnn displayyyeddd ?" + isDisplayed);
+        await browser.switchToFrame(await this.Iframe);
+        await browser.pause(2000);
+    }
     async checkingCartItems() {
         let cart_text = await this.CartText.getText();
         let cart_btn = this.CartBtn;
@@ -85,7 +101,7 @@ class CheckOut_locators {
         await this.Zipcode.setValue('12345');
         //    let submit_btn = await $('#submitButton');
         await submit_button.click();
-        await browser.pause(5000);
+        //    await browser.pause(5000);
     }
 
 }

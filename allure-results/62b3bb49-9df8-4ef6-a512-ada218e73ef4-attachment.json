@@ -1,4 +1,0 @@
-{
-  "using": "xpath",
-  "value": "//button[@class='stripe-button-el']"
-}

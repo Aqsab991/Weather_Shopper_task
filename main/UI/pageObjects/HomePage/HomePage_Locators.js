@@ -32,5 +32,16 @@ class HomePage_Locators {
     async wait(locator) {
         await locator.waitForDisplayed(8000);
     }
+    async extractKeyword() {
+        let url = await browser.getUrl();
+        console.log("The obtained url is : " + url);
+        let split_url = url.split('.com/');
+        let keyword = split_url.slice(1);
+        console.log("The keyword is : " + keyword);
+        // const assert = require('soft-assert');
+        let value = await url.includes(keyword);
+        console.log("The value issssssss is : " + value);
+        return value;
+    }
 }
 module.exports = new HomePage_Locators();
