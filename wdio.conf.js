@@ -54,7 +54,7 @@ exports.config = {
         // maxInstances can get overwritten per capability. So if you have an in-house Selenium
         // grid with only 5 firefox instances available you can make sure that not more than
         // 5 instances get started at a time.
-        maxInstances: 1,
+        maxInstances: 5,
         //
         browserName: 'chrome',
         acceptInsecureCerts: true
@@ -132,7 +132,7 @@ exports.config = {
     // Test reporter for stdout.
     // The only one supported by default is 'dot'
     // see also: https://webdriver.io/docs/dot-reporter
-    reporters: ['spec', ['allure', { outputDir: './Reports/allure-results' }]],
+    reporters: ['spec', ['allure', { outputDir: './Reports/allure-results' }], 'cucumberjs-json'],
 
 
     //
@@ -273,7 +273,7 @@ exports.config = {
      */
     afterStep: function (step, scenario, result, context) {
         let date = Date.now();
-        browser.saveScreenshot('./Reports/ScreenShots/Task-' + date + '.png');
+        browser.saveScreenshot('./HtmlReport/Screenshots/Task-' + date + '.png');
     },
     /**
      *
@@ -320,8 +320,39 @@ exports.config = {
      * @param {Array.<Object>} capabilities list of capabilities details
      * @param {Array.<String>} specs List of spec file paths that ran
      */
-    // afterSession: function (config, capabilities, specs) {
-    // },
+    /* afterSession: function (config, capabilities, specs) {
+         const report = require('cucumber-html-reporter');
+         report.generate({
+             theme: 'bootstrap',
+             jsonDir: './.tmp/json',
+             reportPath: './Reportt/cucumber-htmlreport.html',
+             reportSuiteAsScenarios: true,
+             scenarioTimestamp: true,
+             launchReport: true
+ 
+             /*  metadata: {
+                   browser: {
+                       name: 'chrome',
+                       version: '60'
+                   },
+                   device: 'Local test machine',
+                   platform: {
+                       name: 'ubuntu',
+                       version: '16.04'
+                   }
+               },
+               customData: {
+                   title: 'Run info',
+                   data: [
+                       { label: 'Project', value: 'Custom project' },
+                       { label: 'Release', value: '1.2.3' },
+                       { label: 'Cycle', value: 'B11221.34321' },
+                       { label: 'Execution Start Time', value: 'Nov 19th 2017, 02:31 PM EST' },
+                       { label: 'Execution End Time', value: 'Nov 19th 2017, 02:56 PM EST' }
+                   ]
+               }*/
+    //     });
+    //  },*/
     /**
      * Gets executed after all workers got shut down and the process is about to exit. An error
      * thrown in the onComplete hook will result in the test run failing.
@@ -330,35 +361,21 @@ exports.config = {
      * @param {Array.<Object>} capabilities list of capabilities details
      * @param {<Object>} results object containing test results
      */
-    /* onComplete: function (exitCode, config, capabilities, results) {
-         // wdio.conf.js
-         const allure = require('allure-commandline');
- 
-         //  exports.config = {
-         // ...
-         //   onComplete: function () {
-         const reportError = new Error('Could not generate Allure report')
-         const generation = allure(['generate', './Reports/allure-results', '--clean'])
-         return new Promise((resolve, reject) => {
-             const generationTimeout = setTimeout(
-                 () => reject(reportError),
-                 5000)
- 
-             generation.on('exit', function (exitCode) {
-                 clearTimeout(generationTimeout)
- 
-                 if (exitCode !== 0) {
-                     return reject(reportError)
-                 }
- 
-                 console.log('Allure report successfully generated')
-                 resolve()
-             })
-         })
-         //   }
-         // ...
-         //  }
-     },*/
+    onComplete: function () {
+        let reporter = require('cucumber-html-reporter');
+        console.log("I am insideeeeeeeee this method")
+        let options = {
+            theme: 'bootstrap',
+            jsonDir: './.tmp/json',
+            output: './HtmlReport/cucumber-html-report.html',
+            //   reportSuiteAsScenarios: true,
+            //   scenarioTimestamp: true,
+            launchReport: true,
+
+        };
+
+        reporter.generate(options);
+    },
     /**
     * Gets executed when a refresh happens.
     * @param {String} oldSessionId session ID of the old session

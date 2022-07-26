@@ -1,4 +1,4 @@
-@Regression
+
 Feature: Product Selection
 
   As a user, I want to be able to select either a moisturiser or suncreen on the basis of temperature

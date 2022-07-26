@@ -23,6 +23,7 @@ class CheckOut_locators {
     async switchingToiframe() {
         await this.paymentbtnSpan.waitForDisplayed({ timeout: 50000 });
         let pay_by_card_btn = await this.paymentbyCardbtn;
+        
         await pay_by_card_btn.click();
         //browser.pause(3000);
         //  $('.stripe_checkout_app').isDisplayed();
@@ -101,7 +102,7 @@ class CheckOut_locators {
         await this.Zipcode.setValue('12345');
         //    let submit_btn = await $('#submitButton');
         await submit_button.click();
-        //    await browser.pause(5000);
+        await browser.pause(5000);
     }
 
 }

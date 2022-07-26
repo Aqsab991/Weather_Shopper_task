@@ -1,0 +1,147 @@
+{
+  "id": {
+    "sessionId": "ef04031a835fb53b96d573b9110f0551",
+    "elementId": "4b44095b-c1b4-433f-885c-0eeb4bb10817",
+    "element-6066-11e4-a52e-4f735466cecf": "4b44095b-c1b4-433f-885c-0eeb4bb10817",
+    "selector": ".stripe_checkout_app",
+    "parent": {
+      "sessionId": "ef04031a835fb53b96d573b9110f0551",
+      "capabilities": {
+        "acceptInsecureCerts": true,
+        "browserName": "chrome",
+        "browserVersion": "103.0.5060.134",
+        "chrome": {
+          "chromedriverVersion": "103.0.5060.53 (a1711811edd74ff1cf2150f36ffa3b0dae40b17f-refs/branch-heads/5060@{#853})",
+          "userDataDir": "C:\\Users\\DELL\\AppData\\Local\\Temp\\scoped_dir8012_851556601"
+        },
+        "goog:chromeOptions": {
+          "debuggerAddress": "localhost:55048"
+        },
+        "networkConnectionEnabled": false,
+        "pageLoadStrategy": "normal",
+        "platformName": "windows",
+        "proxy": {},
+        "setWindowRect": true,
+        "strictFileInteractability": false,
+        "timeouts": {
+          "implicit": 0,
+          "pageLoad": 300000,
+          "script": 30000
+        },
+        "unhandledPromptBehavior": "dismiss and notify",
+        "webauthn:extension:credBlob": true,
+        "webauthn:extension:largeBlob": true,
+        "webauthn:virtualAuthenticators": true
+      },
+      "config": {
+        "specs": [
+          "./test/features/**/*.feature"
+        ],
+        "suites": {},
+        "exclude": [],
+        "logLevel": "info",
+        "logLevels": {},
+        "excludeDriverLogs": [],
+        "bail": 0,
+        "waitforInterval": 500,
+        "waitforTimeout": 10000,
+        "framework": "cucumber",
+        "reporters": [
+          "spec",
+          [
+            "allure",
+            {
+              "outputDir": "./Reports/allure-results"
+            }
+          ],
+          "cucumberjs-json"
+        ],
+        "services": [
+          "chromedriver"
+        ],
+        "maxInstances": 10,
+        "maxInstancesPerCapability": 100,
+        "filesToWatch": [],
+        "connectionRetryTimeout": 120000,
+        "connectionRetryCount": 3,
+        "execArgv": [],
+        "runnerEnv": {},
+        "runner": "local",
+        "specFileRetries": 0,
+        "specFileRetriesDelay": 0,
+        "specFileRetriesDeferred": false,
+        "reporterSyncInterval": 100,
+        "reporterSyncTimeout": 5000,
+        "cucumberFeaturesWithLineNumbers": [],
+        "autoCompileOpts": {
+          "autoCompile": true,
+          "tsNodeOpts": {
+            "transpileOnly": true
+          },
+          "babelOpts": {}
+        },
+        "mochaOpts": {
+          "timeout": 10000
+        },
+        "jasmineOpts": {
+          "defaultTimeoutInterval": 10000
+        },
+        "cucumberOpts": {
+          "timeout": 60000,
+          "require": [
+            "./test/Step-Defs/**/HomePage.js",
+            "./test/Step-Defs/**/Purchase_moisturiser_defs.js",
+            "./test/Step-Defs/**/PurchaseProducts.js",
+            "./test/Step-Defs/**/Checkout.js"
+          ],
+          "backtrace": false,
+          "requireModule": [],
+          "dryRun": false,
+          "failFast": false,
+          "snippets": true,
+          "source": true,
+          "strict": false,
+          "tagExpression": "",
+          "ignoreUndefinedDefinitions": false
+        },
+        "onPrepare": [],
+        "onWorkerStart": [],
+        "onWorkerEnd": [],
+        "before": [],
+        "beforeSession": [
+          null
+        ],
+        "beforeSuite": [],
+        "beforeHook": [],
+        "beforeTest": [],
+        "beforeCommand": [],
+        "afterCommand": [],
+        "afterTest": [],
+        "afterHook": [],
+        "afterSuite": [],
+        "afterSession": [],
+        "after": [],
+        "onComplete": [
+          null
+        ],
+        "onReload": [],
+        "beforeFeature": [],
+        "beforeScenario": [],
+        "beforeStep": [],
+        "afterStep": [
+          null
+        ],
+        "afterScenario": [],
+        "afterFeature": [],
+        "baseUrl": "https://weathershopper.pythonanywhere.com/",
+        "_": [
+          "run"
+        ],
+        "$0": "node_modules\\@wdio\\cli\\bin\\wdio.js",
+        "config-path": "wdio.conf.js",
+        "ignoredWorkerServices": []
+      }
+    },
+    "isReactElement": false
+  }
+}

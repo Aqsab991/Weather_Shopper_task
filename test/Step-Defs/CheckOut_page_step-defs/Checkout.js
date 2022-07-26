@@ -5,12 +5,15 @@ import CheckOut_locators from 'D:/Task/Weather_Shopper_task/main/UI/pageObjects/
 import ProductSPF50 from 'D:/Task/Weather_Shopper_task/main/UI/pageObjects/Product_purchase/ProductSPF50.action.js';
 import ProductSPF30 from 'D:/Task/Weather_Shopper_task/main/UI/pageObjects/Product_purchase/ProductSPF30.action.js';
 import switchingIframe from 'D:/Task/Weather_Shopper_task/main/UI/pageObjects/CheckOut/switchingIframe.actions.js';
+import ProductPurchase_locators from '../../../main/UI/pageObjects/Product_purchase/ProductPurchase_locators'; 'D:/Task/Weather_Shopper_task/main/UI/pageObjects/Product_purchase/ProductPurchase_locators.js';
 import assert from 'soft-assert';
+let y;
 Given("there are items in the cart", async () => {
     await CheckOut_locators.url;
 
-    await ProductSPF50();
-    await ProductSPF30();
+    y = await ProductPurchase_locators.add_item();
+
+    // await ProductSPF30();
 });
 When("the user enter payment details and makes payment", async () => {
 
@@ -60,9 +63,17 @@ When("the user enter payment details and makes payment", async () => {
     /* await setTimeout(async function () {
          console.log("Switched Frame")
      }, 20000);*/
-    await switchingIframe();
-    await browser.saveScreenshot("./screenshots/screenshots.png");
-
+    let total_price = await $('//tr/td/following-sibling::td').getText();
+    console.log("The y is : " + y);
+    console.log("Total Price :" + total_price);
+    if (total_price.includes(y)) {
+        await switchingIframe();
+        await browser.saveScreenshot("./screenshots/screenshots.png");
+        console.log("Prices are equal !!");
+    }
+    else {
+        console.log("Can't switch to iframe as prices not equal !!");
+    }
 
     await addingCheckoutDetails();
     //  await CheckOut_locators.addPaymentDetails();
@@ -108,6 +119,7 @@ Then("the payment success screen will be given to user", async () => {
     let keyword = "confirmation";
     // const assert = require('assert')
     let value = url.includes(keyword);
+
 
     await assert.softTrue(value, `User is not on payment screen !`);
     await assert.softAssertAll();

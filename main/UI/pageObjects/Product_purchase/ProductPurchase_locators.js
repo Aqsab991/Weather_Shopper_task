@@ -25,7 +25,29 @@ class ProductPurchase_locators {
     };
     get ShoppingCart() {
         return $("#cart");
-    }
+    };
+    async add_item() {
+        await this.btn_spf50[1].click();
+        let productPrice = await this.PList_of_SPF50[1].getText();
+        //   let array_text = await Plist[i].getText();
+        var n = 2;
+        let splited_text = '';
+        let slice = '';
+        if (productPrice.includes("Rs.")) {
+            splited_text = productPrice.split(' ');
+            slice = splited_text.slice(n);
+            //  console.log("splited array : " + slice);
+        }
+        else {
+            splited_text = productPrice.split(' ');
+            slice = splited_text.slice(1);
+
+        }
+        console.log("The text: " + slice);
+        let Pprice = parseInt(slice);
+        console.log("Price : " + Pprice);
+        return Pprice;
+    };
     async Aloemoisturiser() {
 
         let y = 0;
