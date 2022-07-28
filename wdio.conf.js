@@ -1,3 +1,5 @@
+const { removeSync } = require('fs-extra');
+const cucumberJson = require('wdio-cucumberjs-json-reporter').default;
 exports.config = {
     //
     // ====================
@@ -142,10 +144,9 @@ exports.config = {
         // require: ['./features/step-definitions/steps.js'],
         require: [
 
-            "./test/Step-Defs/**/HomePage.js",
-            "./test/Step-Defs/**/Purchase_moisturiser_defs.js",
-            "./test/Step-Defs/**/PurchaseProducts.js",
-            "./test/Step-Defs/**/Checkout.js"
+            "./test/steps/**/homePage.js",
+            "./test/steps/**/purchaseProducts.js",
+            "./test/steps/**/checkOut.js"
 
 
         ],
@@ -166,7 +167,7 @@ exports.config = {
         // <string> (expression) only execute the features or scenarios with tags matching the expression
         tagExpression: '',
         // <number> timeout for step definitions
-        timeout: 60000,
+        timeout: 180000,
         // <boolean> Enable this config to treat undefined definitions as warnings.
         ignoreUndefinedDefinitions: false,
         //  plugin: ["progress"]
@@ -185,8 +186,10 @@ exports.config = {
      * @param {Object} config wdio configuration object
      * @param {Array.<Object>} capabilities list of capabilities details
      */
-    // onPrepare: function (config, capabilities) {
-    // },
+
+    onPrepare: async (config, capabilities) => {
+        await removeSync('.tmp/');
+    },
     /**
      * Gets executed before a worker process is spawned and can be used to initialise specific service
      * for that worker as well as modify runtime environments in an async fashion.
@@ -226,7 +229,9 @@ exports.config = {
      * @param {Object}         browser      instance of created browser/device session
      */
     // before: function (capabilities, specs) {
-    // },
+    //  let date = Date.now();
+    //cucumberJson.attach(browser.takeScreenshot(), 'image/img'+date+'png');
+    //},
     /**
      * Runs before a WebdriverIO command gets executed.
      * @param {String} commandName hook command name
@@ -258,7 +263,8 @@ exports.config = {
      * @param {IPickle}            scenario scenario pickle
      * @param {Object}             context  Cucumber World object
      */
-    // beforeStep: function (step, scenario, context) {
+    //  beforeStep: function (step, scenario, context) {
+    //    cucumberJson.attach(browser.takeScreenshot(), 'image/png');
     // },
     /**
      *
@@ -271,9 +277,11 @@ exports.config = {
      * @param {number}             result.duration  duration of scenario in milliseconds
      * @param {Object}             context          Cucumber World object
      */
-    afterStep: function (step, scenario, result, context) {
-        let date = Date.now();
-        browser.saveScreenshot('./HtmlReport/Screenshots/Task-' + date + '.png');
+    afterStep: async function after(step, scenario, result, context) {
+
+        //  let date = Date.now();
+        //  await browser.saveScreenshot('./HtmlReport/Screenshots/Task-' + date + '.png');
+        cucumberJson.attach(await browser.takeScreenshot(), 'image/png');
     },
     /**
      *
@@ -312,8 +320,19 @@ exports.config = {
      * @param {Array.<Object>} capabilities list of capabilities details
      * @param {Array.<String>} specs List of spec file paths that ran
      */
-    // after: function (result, capabilities, specs) {
-    // },
+    //   after: async function after(result, capabilities, specs) {
+    //     cucumberJson.attach(await browser.takeScreenshot(), 'image/png');
+    // let date = Date.now();
+    /*  const path = './HtmlReport/Screen/Task-' + date + '.png';
+      browser.saveScreenshot(path);
+      //   browser.saveScreenshot(path);
+      //  const cucumberJson = require('wdio-cucumberjs-json-reporter').default;
+      const data = fs.readFileSync(path);
+ 
+      const base64Image = Buffer.from(data, 'binary').toString('base64')
+      cucumberJson.attach(base64Image, 'image/png');*/
+
+    //   },*/
     /**
      * Gets executed right after terminating the webdriver session.
      * @param {Object} config wdio configuration object
@@ -361,20 +380,25 @@ exports.config = {
      * @param {Array.<Object>} capabilities list of capabilities details
      * @param {<Object>} results object containing test results
      */
-    onComplete: function () {
-        let reporter = require('cucumber-html-reporter');
+    onComplete: async () => {
+        let reporter = await require('cucumber-html-reporter');
         console.log("I am insideeeeeeeee this method")
         let options = {
             theme: 'bootstrap',
             jsonDir: './.tmp/json',
             output: './HtmlReport/cucumber-html-report.html',
+            //      screenshotsDirectory: './HtmlReport/screenshots/',
+            launchReport: true,
+            // storeScreenshots: true,
+            //screenshotsDirectory: './HtmlReport/screenshots/'
             //   reportSuiteAsScenarios: true,
             //   scenarioTimestamp: true,
-            launchReport: true,
+
+
 
         };
 
-        reporter.generate(options);
+        await reporter.generate(options);
     },
     /**
     * Gets executed when a refresh happens.

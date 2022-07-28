@@ -1,0 +1,5 @@
+{
+    "smallWait": 2000,
+    "largeWait": 10000,
+    "veryLargeWait": 50000
+}
