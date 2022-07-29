@@ -1,4 +1,4 @@
-import * as productPurchaseLocators from '../Product_purchase/productPurchase.locators.js';
+import * as productPurchaseLocators from '../productPurchase/productPurchase.locators.js';
 import assert from 'soft-assert';
 export default async function checkCarthasTwoProducts() {
     let cartt = await productPurchaseLocators.ShoppingCart;

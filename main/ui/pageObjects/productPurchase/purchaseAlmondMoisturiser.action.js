@@ -1,5 +1,5 @@
-import * as productPurchaseLocators from '../Product_purchase/productPurchase.locators.js';
-import { extract_price } from '../Product_purchase/extractPrice.action.js';
+import * as productPurchaseLocators from '../productPurchase/productPurchase.locators.js';
+import { extract_price } from '../productPurchase/extractPrice.action.js';
 export default async function Almondmoisturiser() {
 
     let y = 0;

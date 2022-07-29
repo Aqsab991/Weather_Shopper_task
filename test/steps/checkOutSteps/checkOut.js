@@ -4,10 +4,9 @@ import addingCheckoutDetails from '../../../main/ui/pageObjects/CheckOut/addingD
 import addItems from '../../../main/ui/pageObjects/CheckOut/addItemsinCart.action.js';
 import * as CheckOut_locators from '../../../main/ui/pageObjects/checkOut/checkout.locators.js';
 import switchToIframe from '../../../main/ui/pageObjects/CheckOut/switchingIframe.actions.js';
-import * as ProductPurchase_locators from '../../../main/ui/pageObjects/Product_purchase/productPurchase.locators.js';
+import * as ProductPurchase_locators from '../../../main/ui/pageObjects/productPurchase/productPurchase.locators.js';
 import paymentSuccess from '../../../main/ui/pageObjects/CheckOut/successfulPayment.assertion.js';
-import assert from 'soft-assert';
-import waits from "D:/Task/Weather_Shopper_task/main/utils/waits.json";
+
 let y = 0;
 Given("there are items in the cart", async () => {
     await CheckOut_locators.url;

@@ -1,4 +1,4 @@
-import * as productPurchaseLocators from '../Product_purchase/productPurchase.locators.js';
+
 export async function extract_price(Plist) {
     var price_list = [];
     let sort_array = [];

@@ -1,6 +1,5 @@
-import * as checkoutLocators from '../checkOut/checkout.locators.js';
-import waits from "../../../utils/waits.json"
-import * as productPurchaseLocators from '../Product_purchase/productPurchase.locators.js';
+
+import * as productPurchaseLocators from '../productPurchase/productPurchase.locators.js';
 /**
  * Navigates to a URL
  

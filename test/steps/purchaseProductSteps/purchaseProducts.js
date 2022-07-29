@@ -1,12 +1,11 @@
 import { Given, When, Then } from '@wdio/cucumber-framework';
-import purchase_aloeMositurizer from '../../../main/ui/pageObjects/Product_purchase/purchaseAloeMoisturiser.action.js';
-import Almondmoisturiser from '../../../main/ui/pageObjects/Product_purchase/purchaseAlmondMoisturiser.action.js';
-import * as ProductPurchaseLocators from '../../../main/ui/pageObjects/Product_purchase/productPurchase.locators.js';
+import purchase_aloeMositurizer from '../../../main/ui/pageObjects/productPurchase/purchaseAloeMoisturiser.action.js';
+import Almondmoisturiser from '../../../main/ui/pageObjects/productPurchase/purchaseAlmondMoisturiser.action.js';
+import * as ProductPurchaseLocators from '../../../main/ui/pageObjects/productPurchase/productPurchase.locators.js';
 import * as homePageLocators from "D:/Task/Weather_Shopper_task/main/ui/pageObjects/homePage/homePage.locators.js";
-import SPF50Sunscreen from '../../../main/ui/pageObjects/Product_purchase/purchaseSPF50.action.js';
-import SPF30Sunscreen from '../../../main/ui/pageObjects/Product_purchase/purchaseSPF30.action.js';
-import checkCarthasTwoProducts from '../../../main/ui/pageObjects/Product_purchase/checkCartValue.assertion.js';
-import assert from 'soft-assert';
+import SPF50Sunscreen from '../../../main/ui/pageObjects/productPurchase/purchaseSPF50.action.js';
+import SPF30Sunscreen from '../../../main/ui/pageObjects/productPurchase/purchaseSPF30.action.js';
+import checkCarthasTwoProducts from '../../../main/ui/pageObjects/productPurchase/checkCartValue.assertion.js';
 import waits from "D:/Task/Weather_Shopper_task/main/utils/waits.json";
 Given("the user is at the \"Home\" page of app", async () => {
     await browser.url("/");

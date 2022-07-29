@@ -1,4 +1,4 @@
-import * as homePageLocators from "../HomePage/homePage.locators.js";
+
 import assert from 'soft-assert';
 import { extractKeyword } from '../homePage/extractKeyword.action.js';
 export default async function thenAssertion() {
