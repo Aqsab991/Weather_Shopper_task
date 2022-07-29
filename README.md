@@ -26,4 +26,6 @@
     Two reports have been added.
     - Allure Reports.(Folder name => Reports)
     - Cucumber Html Report.(Folder name => HtmlReport)
- 7. Screen Shot of each step is added in the reportt folder
+ 7. Screen Shot of each step is added in the reportt folder.
+ 
+ To install node_modules before running this code type: npm i in terminal of project
